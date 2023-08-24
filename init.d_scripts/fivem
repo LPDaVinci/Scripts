@@ -1,0 +1,37 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides: 		fivemserver
+# Required-Start: 	$local_fs $network
+# Required-Stop:	$local_fs $network
+# Default-Start: 	2 3 4 5
+# Default-Stop: 	0 1 6
+# Description: 		FiveM Server
+### END INIT INFO
+# INIT Script by wiki.xprog.de
+######################################
+# Customize values for your needs: "User"; "DIR"
+USER="fivem"
+DIR="/home/fivem/FXServer"
+###### Teamspeak 3 server start/stop script ######
+case "$1" in
+start)
+su $USER -c "${DIR}/manage.sh start"
+;;
+stop)
+su $USER -c "${DIR}/manage.sh stop"
+;;
+restart)
+su $USER -c "${DIR}/manage.sh restart"
+;;
+status)
+su $USER -c "${DIR}/manage.sh status"
+;;
+screen)
+su $USER -c "${DIR}/manage.sh screen"
+;;
+*)
+echo "Usage: {start|stop|restart|status|screen}" >&2
+exit 1
+;;
+esac
+exit 0
