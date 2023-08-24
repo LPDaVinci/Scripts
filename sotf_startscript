@@ -49,8 +49,8 @@ case "$1" in
 		;;
 
 	status)
-		# Check whether there's a "srcds" process
-		ps aux | grep -v grep | grep srcds_r > /dev/null
+		# Check whether there's a "wine" process
+		ps aux | grep -v grep | grep wine > /dev/null
 		CHECK=$?
 		[ $CHECK -eq 0 ] && echo "SOTFServer is UP" || echo "SOTFServer is DOWN"
 		;;
