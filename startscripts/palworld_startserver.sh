@@ -4,8 +4,8 @@
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/var/steamcmd/server/palworld
-DAEMON=$DIR/PalServer.sh
+DIR=/var/steamcmd/server/palworld/Pal/Binaries/Linux/
+DAEMON=$DIR/PalServer-Linux-Test
 
 # Change all PARAMS to your needs.
 PARAMS=""
