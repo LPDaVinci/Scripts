@@ -8,7 +8,7 @@ DIR=/var/steamcmd/server/palworld/Pal/Binaries/Linux/
 DAEMON=$DIR/PalServer-Linux-Test
 
 # Change all PARAMS to your needs.
-PARAMS=""
+PARAMS="-publicip XXX.XXX.XXX.XXX -publicport XXXX EpicApp=PalServer -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS -log"
 NAME=PAL01
 DESC="Pal dedicated Server"
 
